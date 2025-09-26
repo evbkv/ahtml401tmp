@@ -1,0 +1,324 @@
+/* 
+
+HTML 4.1
+
+Color #1 - RoyalBlue
+Color #2 - FireBrick
+Color #3 - Gray
+Color #4 - Gainsboro
+Color #5 - WhiteSmoke
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.header, .main {
+	font-family: "PT Serif", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+.nav, .footer, h1, .section h2, button, input[type="submit"], .button, input[type="text"], input[type="password"], textarea, select {
+	font-family: "PT Sans", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+::selection {
+	background: LemonChiffon;
+}
+
+body {
+	margin: 7px;
+}
+
+.container {
+	width: 950px;
+	margin: 0 auto;
+}
+
+.menu, .close {
+	display: none;
+}
+
+.header {
+	font-size: 24px;
+	letter-spacing: 5px;
+	margin-bottom: 55px;
+	border-bottom: 1px solid Gainsboro;
+}
+
+.header a {
+	color: Gainsboro;
+}
+
+.nav {
+	font-size: 18px;
+	float: right;
+	width: 38%;
+}
+
+.nav ul {
+	padding: 5px 0 0 38%;
+	list-style-type: none;
+}
+
+.nav li {
+	padding: 7px 0;
+}
+
+.nav a {
+	text-decoration: none;
+	color: Gray;
+}
+.nav a:hover {
+	color: RoyalBlue;
+}
+
+.nav svg {
+	position: relative;
+	width: 18px;
+	height: 18px;
+	top: 3px;
+	padding-left: 10px;
+}
+
+.nav form {
+	margin-top: 40px;
+}
+
+.main {
+	font-size: 18px;
+	float: left;
+	width: 62%;
+}
+
+p {
+    white-space: pre-wrap;
+}
+
+p > span {
+	color: FireBrick;
+}
+
+h1 {
+	font-size: 34px;
+	line-height: 1;
+	margin-bottom: 40px;
+}
+
+.h1-second-line {
+	font-size: 18px;
+	color: Gray;
+}
+
+.source {
+	font-size: 16px;
+	font-style: italic;
+	color: Gray;
+}
+
+.section {
+	margin-top: 60px;
+	padding: 10px;
+	background-color: WhiteSmoke;
+}
+
+.section h2 {
+	font-size: 22px;
+	font-weight: normal;
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+	color: RoyalBlue;
+}
+
+form p {
+	margin: 3px 0;
+	padding: 0;
+}
+
+input[type="text"], input[type="password"], textarea, select {
+	font-size: 16px;
+	display: inline-block;
+	width: calc(100% - 12px);
+	margin: 5px 0 10px 0;
+	padding: 5px;
+	border: 1px solid Gainsboro;
+	border-radius: 0;
+}
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus, select:focus {
+	outline: 0;
+	border: 1px solid RoyalBlue;
+}
+
+textarea {
+	resize: vertical;
+}
+
+select {
+	width: 100%;
+}
+
+button, input[type="submit"], .button {
+	font-size: 16px;
+	color: Gray;
+	display: inline-block;
+	margin: 5px 10px 10px 0;
+	padding: 5px 20px;
+	background-color: White;
+	border: 1px solid Gainsboro;
+	border-radius: 0;
+	cursor: pointer;
+}
+button:hover, input[type="submit"]:hover, .button:hover {
+	color: RoyalBlue;
+	background-color: WhiteSmoke;
+	border-color: RoyalBlue;
+}
+.btn-red:hover {
+	color: FireBrick !important;
+	border: 1px solid FireBrick !important;	
+}
+
+table, tr, td {
+	margin: 0;
+	padding: 0;
+	border-spacing: 0;
+}
+
+td {
+	vertical-align: top;
+	padding: 23px 0 7px;
+	border-bottom: 1px solid Gainsboro;
+}
+
+ol > li {
+	margin-bottom: 15px;
+}
+
+small > a {
+	color: Gray;
+}
+small > a:hover {
+	color: RoyalBlue;
+}
+small > a > svg {
+	fill: Gray;
+	position: relative;
+	width: 18px;
+	height: 18px;
+	top: 4px;
+}
+small > a > svg:hover {
+	fill: RoyalBlue;
+}
+
+img {
+	width: 100%;
+}
+
+hr {
+	margin: 30px 0;
+	border: none;
+	height: 1px;
+	color: Gainsboro;
+	background-color: Gainsboro;
+}
+
+.footer {
+	font-size: 16px;
+	color: Gainsboro;
+	clear: both;
+	padding: 80px 0 30px;
+}
+
+.footer a {
+	color: Gainsboro;
+}
+
+/* 
+
+HTML 5.0
+
+*/
+
+@media (max-width: 964px) {
+
+	.container, .header, .nav, .main, .footer {
+		width: 100%;
+	}
+
+	.nav, .main {
+		clear: both;
+	}
+
+	.nav {
+		display: none;
+		z-index: 9999;
+		position: fixed;
+		width: 300px;
+		height: 100%;
+		top: 0;
+		right: 0;
+		background-color: rgba(255,255,255,0.6);
+		backdrop-filter: blur(15px);
+		-webkit-backdrop-filter: blur(15px);
+		border-left: 1px solid Gainsboro;
+	}
+
+	.nav ul {
+		text-align: left;
+		padding: 94px 45px 0 45px;
+	}
+
+	.nav li {
+		padding-bottom: 20px;
+	}
+
+	.nav a {
+		font-size: 18px;
+		color: RoyalBlue;
+	}
+
+	.menu {
+		display: block;
+		position: absolute;
+		top: 14px;
+		right: 7px;
+	}
+	.menu svg {
+		width: 18px;
+		height: 18px;
+		stroke: RoyalBlue; /*Black; Gainsboro;*/
+		stroke-width: 1px;
+	}
+
+	.close {
+		display: block;
+		position: fixed;
+		top: 11px;
+		right: 7px;
+	}
+	.close svg {
+		width: 18px;
+		height: 18px;
+		stroke: RoyalBlue; /*Black; Gainsboro;*/
+		stroke-width: 2px;
+	}
+
+	button, input[type="submit"], .button {
+		font-size: 15px;
+		color: RoyalBlue;
+		margin: 5px 10px 10px 0;
+		padding: 10px 20px;
+		border-color: RoyalBlue;
+	}
+	.btn-red {
+		color: FireBrick !important;
+		border-color: FireBrick !important;	
+	}
+
+}
