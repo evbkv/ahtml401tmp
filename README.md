@@ -37,10 +37,12 @@ A lightweight, standards-compliant HTML 4.01 template designed for academic proj
 
 ## File Structure
 
+```
 ahtml401tmp/
 ├── index.html # Main template file
 ├── style.css # Stylesheet
 └── screenshot.png # Template preview
+```
 
 ## Browser Compatibility
 
